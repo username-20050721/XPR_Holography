@@ -1,0 +1,15 @@
+device: cuda:5
+
+run_path: /data/wyw/lwj/XPR_holo/runs 
+scene: scene_2
+grid_size: [1, 1080, 1920] #不论是否使用XPR，最终得到图像的resolution
+channel: 2
+scene_path: /data/wyw/lwj/XPR_holo/data/scene_2_2k
+
+model_name: ASM
+lr: 0.03
+epochs: 1250
+#如果使用XPR，设置为1000epoch，如果不使用，设置为1250
+# 1250 1000
+
+#XPR: 改gridsize（x2）,改epochs,改传播距离，改数据来源
